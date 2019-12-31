@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "gym",
+  "builds": [
+    {
+      "src": "gym/package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "build" }
+    }
+  ],
+  "routes": [{ "src": "/(.*)", "dest": "gym/$1" }]
+}
